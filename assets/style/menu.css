@@ -1,0 +1,47 @@
+header.menu {
+    z-index: 2;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--main-color);
+    width: 100%;
+
+    h1 {
+        text-shadow: 0px 0px 12px rgba(255, 0, 179, 0.685);
+        padding: 1rem 0;
+    }
+
+    nav {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem 0 0.25rem;
+    }
+
+    nav a {
+        color: var(--font-color);
+        transition: .5s;
+        border-radius: 4px;
+        padding: 1rem 2rem;
+    }
+
+    nav a.active {
+        color: white;
+        text-shadow: 0px 0px 8px rgba(255, 0, 179, 0.685);
+    }
+
+    nav a:hover {
+        color: var(--font-color);
+        text-shadow: 0px 0px 0px;
+        background-color: white;
+        transition: .5s;
+    }
+}
+
+
+header.menu~* {
+    padding-top: 20vh;
+}
